@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuber.AI</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js"></script>
+</head>
+<body style="background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://www.matsci.ai/donny-jiang-Uj_g1ZSzPoY-unsplash.jpg');">
+
+    <header>
+        <h1>Kuber.AI</h1>
+    </header>
+    
+
+    <form method="POST" class="recommendation-form">
+        <label for="category">Category of TMT BAR:</label>
+        <select name="category" id="category">
+            <option value="1">Category 1</option>
+            <option value="2">Category 2</option>
+            <option value="3">Category 3</option>
+            <option value="4">Category 4</option>
+            <option value="5">Category 5</option>
+            <option value="6">Category 6</option>
+        </select>
+        <label for="zone">Zone:</label>
+        <select name="zone" id="zone">
+            <option value="east">East</option>
+            <option value="west">West</option>
+            <option value="north">North</option>
+            <option value="south">South</option>
+        </select>
+        <button type="submit">Get Suitable Suppliers</button>
+    </form>
+
+    <section id="recommendation-list" class="recommendation-list">
+        <!-- Recommendations will be displayed here -->
+    </section>
+    <h4>Diameter of TMT bar is considered 8mm and length 12m for most data points<br>
+        Grade is considered as Fe 550<br>
+        Ratings, number of reviews, response score, delivery score and quality score used customer feedback from IndiaMart<br>
+        </h4>
+
+    <div class="container">
+        <h2>Zone and States Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Zone</th>
+                    <th>States</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>North</td>
+                    <td>Up, Haryana, Delhi, Punjab, Himachal Pradesh, Uttarakhand, J and K, Ladakh</td>
+                </tr>
+                <tr>
+                    <td>South</td>
+                    <td>Tamil Nadu, Kerala, Karnataka, Telangana, Andhra Pradesh</td>
+                </tr>
+                <tr>
+                    <td>West</td>
+                    <td>Rajasthan, Gujarat, Maharashtra, Goa, Madhya Pradesh</td>
+                </tr>
+                <tr>
+                    <td>East</td>
+                    <td>Chhattisgarh, Odisha, Bihar, Jharkhand, West Bengal, Sikkim, 7 Sisters</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Category of TMT Bar and Companies Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category of TMT Bar</th>
+                    <th>Name of Company</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6</td>
+                    <td>Tata tiscon, Sail</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Jsw neosteel, Jindal panther</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kamdhenu, srmb</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Essar, vizag, shyam</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Radha, jyoti, elegant</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Amman, agni, jumbo, supershakti, others</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
